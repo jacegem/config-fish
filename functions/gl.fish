@@ -1,7 +1,3 @@
-function gl --wraps='git log --oneline' --description 'alias gl=git log --oneline'
-    if [ $argv ]
-        git log --oneline $argv
-    else
-        git log --oneline -10
-    end
+function gl --wraps=git\ log\ --graph\ --all\ --format=format:\'\%C\(bold\ blue\)\%h\%C\(reset\)\ -\ \%C\(bold\ green\)\(\%ar\)\%C\(reset\)\ \%C\(white\)\%s\%C\(reset\)\ \%C\(bold\ white\)—\ \%an\%C\(reset\)\%C\(bold\ yellow\)\%d\%C\(reset\)\'\ --abbrev-commit\ --date=relative --description alias\ gl=git\ log\ --graph\ --all\ --format=format:\'\%C\(bold\ blue\)\%h\%C\(reset\)\ -\ \%C\(bold\ green\)\(\%ar\)\%C\(reset\)\ \%C\(white\)\%s\%C\(reset\)\ \%C\(bold\ white\)—\ \%an\%C\(reset\)\%C\(bold\ yellow\)\%d\%C\(reset\)\'\ --abbrev-commit\ --date=relative
+  git log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative $argv; 
 end
