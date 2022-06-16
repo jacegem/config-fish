@@ -5,3 +5,5 @@ exa_git.fish
 fisher.fish
 fzf_key_bindings.fish
 fish_prompt.fish
+.clj-kondo/
+.lsp/

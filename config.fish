@@ -8,3 +8,4 @@ set -x PATH /opt/homebrew/bin $PATH
 set -x PATH $HOME/.poetry/bin $PATH
 set -x PATH $HOME/SDK/flutter/bin $PATH
 set -x PATH $JAVA_HOME/bin $PATH
+set -x PATH $HOME/.amplify/bin $PATH
