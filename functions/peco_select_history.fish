@@ -8,7 +8,7 @@ function peco_select_history
     history | peco $peco_flags | read line
 
     if test $line
-        eval $line
+        commandline $line
     else
         commandline ''
     end
