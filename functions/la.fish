@@ -1,3 +1,3 @@
-function la -d 'list files (with hidden) using exa' -w exa
-    command exa -l --group-directories-first -a $argv
+function la --wraps='exa $EXA_STANDARD_OPTIONS $EXA_LA_OPTIONS' --wraps='exa $EXA_STANDARD_OPTIONS $EXA_LA_OPTIONS $EXA_L_OPTIONS' --description 'alias la exa $EXA_STANDARD_OPTIONS $EXA_LA_OPTIONS $EXA_L_OPTIONS'
+  exa $EXA_STANDARD_OPTIONS $EXA_LA_OPTIONS $EXA_L_OPTIONS $argv; 
 end

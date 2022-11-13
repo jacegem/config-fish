@@ -7,3 +7,4 @@ fzf_key_bindings.fish
 fish_prompt.fish
 .clj-kondo/
 .lsp/
+fish_variables

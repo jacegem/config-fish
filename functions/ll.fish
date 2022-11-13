@@ -1,3 +1,3 @@
-function ll -d 'list files with exa' -w exa
-    command exa --icons -l --group-directories-first $argv
+function ll --wraps=exa_git --description 'alias ll exa_git'
+  exa_git $argv; 
 end

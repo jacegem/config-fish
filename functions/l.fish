@@ -1,3 +1,3 @@
-function l -d 'list files with exa' -w exa
-    command exa --icons -l --group-directories-first $argv
+function l --wraps=exa --wraps='exa $EXA_STANDARD_OPTIONS $EXA_L_OPTIONS' --description 'alias l exa $EXA_STANDARD_OPTIONS $EXA_L_OPTIONS'
+  exa $EXA_STANDARD_OPTIONS $EXA_L_OPTIONS $argv; 
 end
