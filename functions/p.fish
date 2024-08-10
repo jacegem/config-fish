@@ -1,3 +1,3 @@
-function p --wraps=pwd --description 'alias p=pwd'
-  pwd $argv; 
+function p --wraps=pnpm --description 'alias p=pnpm'
+  pnpm $argv; 
 end

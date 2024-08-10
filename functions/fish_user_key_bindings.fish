@@ -11,7 +11,7 @@ function fish_user_key_bindings
     bind \cd delete-char
 
     # PATH
-    set PATH $PATH ~/.poetry/bin
+    # set PATH $PATH ~/.poetry/bin
     set PATH $PATH ~/.fzf/bin
     set PATH $PATH ~/.emacs.d/bin
     set PATH $PATH ~/sdk/flutter/bin

@@ -24,5 +24,8 @@ set -x PATH $HOME/.amplify/bin $PATH
 set -x PATH $HOME/.jenv/bin $PATH
 set -x PATH $HOME/.pub-cache/bin $PATH
 set -x PATH $HOME/miniconda3/bin $PATH
+set -x PATH /usr/local/share/dotnet/ $PATH
+set -x PATH /Library/Frameworks/Mono.framework/Versions/Current/Commands/ $PATH
+set -x LOGSEQ_HUGO /Users/jace/workspace/hugo/logseq-hugo
 # set -x PATH $HOME/.poetry/bin $PATH
 # set -x VAULT_ADDR 'https://vault.jace.link'
