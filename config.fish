@@ -5,14 +5,15 @@ end
 set -x HOSTNAME (hostname | string split -m1 '.')[1]
 
 
-# JAVA_HOME 확인 : /usr/libexec/java_home -V   
+# JAVA_HOME 확인 : /usr/libexec/java_home -V
 if contains $HOSTNAME mbp23
     # set -x JAVA_HOME /opt/homebrew/opt/openjdk/bin/java
     # set -x JAVA_HOME /opt/homebrew/Cellar/openjdk/20.0.1/libexec/openjdk.jdk/Contents/Home
-    set -x JAVA_HOME /opt/homebrew/Cellar/openjdk/21.0.2/libexec/openjdk.jdk/Contents/Home
+    # set -x JAVA_HOME /opt/homebrew/Cellar/openjdk/21.0.2/libexec/openjdk.jdk/Contents/Home
+    set -x JAVA_HOME /opt/homebrew/opt/openjdk@17
 else
     set -x JAVA_HOME /Library/Java/JavaVirtualMachines/adoptopenjdk-16.jdk/Contents/Home
-end 
+end
 
 set -x VISUAL /opt/homebrew/bin/nvim
 set -x EDITOR /opt/homebrew/bin/nvim
