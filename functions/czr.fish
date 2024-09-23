@@ -1,3 +1,3 @@
-function chr --wraps='chezmoi re-add'
+function czr --wraps='chezmoi re-add'
   chezmoi re-add $argv;
 end

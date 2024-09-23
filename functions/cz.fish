@@ -1,3 +1,3 @@
-function ch --wraps='chezmoi'
+function cz --wraps='chezmoi'
   chezmoi $argv;
 end
