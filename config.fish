@@ -1,3 +1,8 @@
+fish_add_path "/opt/homebrew/bin/"
+
+# Enable Starship prompt
+# starship init fish | source
+
 if status is-interactive
     # Commands to run in interactive sessions can go here
 end
@@ -28,5 +33,6 @@ set -x PATH $HOME/miniconda3/bin $PATH
 set -x PATH /usr/local/share/dotnet/ $PATH
 set -x PATH /Library/Frameworks/Mono.framework/Versions/Current/Commands/ $PATH
 set -x LOGSEQ_HUGO /Users/jace/workspace/hugo/logseq-hugo
+set -x GITHUB_USERNAME jacegem
 # set -x PATH $HOME/.poetry/bin $PATH
 # set -x VAULT_ADDR 'https://vault.jace.link'
