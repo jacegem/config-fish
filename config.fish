@@ -22,13 +22,13 @@ elif contains $HOSTNAME carmine
     set -x JAVA_HOME /opt/homebrew/opt/openjdk@17
 else
     # set -x JAVA_HOME /Library/Java/JavaVirtualMachines/adoptopenjdk-16.jdk/Contents/Home
-    
+
     set -x JAVA_HOME /opt/homebrew/opt/openjdk@17
 
 end
 
-set -x VISUAL /opt/homebrew/bin/nvim
-set -x EDITOR /opt/homebrew/bin/nvim
+# set -x VISUAL /opt/homebrew/bin/nvim
+# set -x EDITOR /opt/homebrew/bin/nvim
 set -x PATH /opt/homebrew/bin $PATH
 set -x PATH $HOME/.local/bin $PATH
 set -x PATH $HOME/SDK/flutter/bin $PATH
