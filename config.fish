@@ -18,8 +18,6 @@ if contains $HOSTNAME mbp23
     set -x JAVA_HOME /opt/homebrew/opt/openjdk@17
     set -x GITHUB_USERNAME jacegem
     set -x LOGSEQ_HUGO /Users/jace/workspace/hugo/logseq-hugo
-elif contains $HOSTNAME carmine
-    set -x JAVA_HOME /opt/homebrew/opt/openjdk@17
 else
     # set -x JAVA_HOME /Library/Java/JavaVirtualMachines/adoptopenjdk-16.jdk/Contents/Home
 
@@ -44,3 +42,7 @@ set -x PATH /Library/Frameworks/Mono.framework/Versions/Current/Commands/ $PATH
 
 # set -x PATH $HOME/.poetry/bin $PATH
 # set -x VAULT_ADDR 'https://vault.jace.link'
+
+# Added by LM Studio CLI (lms)
+set -gx PATH $PATH /Users/jace/.lmstudio/bin
+set -Ux MONGODB_URL (cat ~/.secret/mongodb_url)
