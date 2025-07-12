@@ -18,11 +18,13 @@ if contains $HOSTNAME mbp23
     set -x JAVA_HOME /opt/homebrew/opt/openjdk@17
     set -x GITHUB_USERNAME jacegem
     set -x LOGSEQ_HUGO /Users/jace/workspace/hugo/logseq-hugo
+    set -Ux MONGODB_URL (cat ~/.secret/mongodb_url)
+else if contains $HOSTNAME jaceui-MacBookPro.local
+    set -x SENTRY_AUTH_TOKEN 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
+    # SENTRY_AUTH_TOKEN=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
 else
     # set -x JAVA_HOME /Library/Java/JavaVirtualMachines/adoptopenjdk-16.jdk/Contents/Home
-
     set -x JAVA_HOME /opt/homebrew/opt/openjdk@17
-
 end
 
 # set -x VISUAL /opt/homebrew/bin/nvim
@@ -45,4 +47,14 @@ set -x PATH /Library/Frameworks/Mono.framework/Versions/Current/Commands/ $PATH
 
 # Added by LM Studio CLI (lms)
 set -gx PATH $PATH /Users/jace/.lmstudio/bin
-set -Ux MONGODB_URL (cat ~/.secret/mongodb_url)
+
+
+fish_add_path /Users/jace/.codeium/windsurf/bin
+fish_add_path /opt/homebrew/opt/postgresql@17/bin
+
+# pnpm
+set -gx PNPM_HOME "/Users/jace/Library/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
